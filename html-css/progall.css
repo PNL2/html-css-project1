@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    font-weight: 400 !important; 
+}
+
+.hd {
+    background-image: url(./proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    text-align: center;
+    padding: 20px;
+    color: floralwhite;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: black;
+    color: rgb(148, 146, 146);
+    padding: 20px;
+    text-align: center;
+}
+
+.c21 p, .c23 p {
+    margin-left: 250px;
+    margin-right: 249px;
+}
+
+.c22 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c22 img {
+    width: 100%; 
+    height: auto; 
+    max-width: 1010px; /* Matches the max-width of .c24 images */
+    margin: 0 auto; /* Center the image if it’s smaller than its container */
+    display: block;
+}
+
+.c24 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.c24 img {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+    flex: 1 1 100%; 
+}
+
+@media (max-width: 900px) {
+    .c2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .c22 img, .c24 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .c24 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c21 p, .c23 p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .c2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hd {
+        padding: 10px;
+        height: 60vh; 
+    }
+
+    .c22 img, .c24 img {
+        max-width: 100%;
+        flex: 1 1 100%; 
+    }
+
+    .c21 p, .c23 p {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .c2 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .c22 img, .c24 img {
+        max-width: 100%; 
+        flex: 1 1 100%;
+    }
+
+    .c21 p, .c23 p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.f-t {
+    background-color: rgb(241, 241, 241);
+    padding: 15px;
+    color: rgb(47, 27, 161);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.f-f {
+    margin-top: 20px;
+    color: rgb(172, 172, 172);
+    text-align: center;
+}

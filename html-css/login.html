@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="./login-fav.jpeg" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="./response.html" method="post" autocomplete="off">
+                <div class="input-group">
+                    <label for="user">Username</label>
+                    <input type="text" name="Username" id="user" required pattern=".{8,}" 
+                        title="Username must be at least 8 characters">
+                </div>
+                <div class="input-group">
+                    <label for="pass">Password</label>
+                    <input type="password" name="Password" id="pass" required 
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%&*:])[a-zA-Z\d!@#$%&*:]{8,16}" 
+                        title="Password must contain one lowercase, one uppercase, one special character, one digit, and be 8-16 characters long">
+                </div>
+                
+                <button type="submit">Login</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
